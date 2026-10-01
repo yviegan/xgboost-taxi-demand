@@ -1,10 +1,10 @@
 # Zonal Taxi Demand Forecasting & Fleet Rebalancing with XGBoost
 
-[中文](README.md) | [English](README_EN.md)
+[中文](README.md) | [English](README_EN.md) · [GitHub](https://github.com/yviegan/xgboost-taxi-demand) · [Live Demo](https://xgboost-taxi-demand-dxfakmprsdudp2k9q3pkko.streamlit.app/)
 
 > Forecasting next-hour pickups across 226 NYC taxi zones from approximately **27.76 million** Yellow Taxi trips, then converting predicted shortages into fleet-rebalancing suggestions.
 
-**Interactive demo:** run `streamlit run app.py` to explore the locked July forecasts and a rebalancing snapshot costed with historical zone-to-zone trip times.
+**[Open the interactive demo](https://xgboost-taxi-demand-dxfakmprsdudp2k9q3pkko.streamlit.app/):** explore the locked July forecasts and a rebalancing snapshot costed with historical zone-to-zone trip times.
 
 ## Results at a glance
 

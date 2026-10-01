@@ -1,10 +1,10 @@
 # 城市出租车需求预测与车辆再平衡｜XGBoost
 
-[中文](README.md) | [English](README_EN.md)
+[中文](README.md) | [English](README_EN.md) · [GitHub](https://github.com/yviegan/xgboost-taxi-demand) · [Live Demo](https://xgboost-taxi-demand-dxfakmprsdudp2k9q3pkko.streamlit.app/)
 
 > 基于约 **2,776 万条** NYC Yellow Taxi 行程，预测 226 个区域下一小时的上车需求，并将预测结果转化为车辆再平衡建议。
 
-**交互演示：**运行 `streamlit run app.py`，浏览锁参后的 7 月预测与基于历史区域间行程时间的再平衡快照。
+**[打开交互演示](https://xgboost-taxi-demand-dxfakmprsdudp2k9q3pkko.streamlit.app/)**：浏览锁参后的 7 月预测与基于历史区域间行程时间的再平衡快照。
 
 ## 项目结果
 

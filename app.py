@@ -27,7 +27,7 @@ def load_demo_data() -> tuple[pd.DataFrame, pd.DataFrame, dict, pd.DataFrame]:
     return predictions, zone_state, summary, moves
 
 
-def forecast_figure(zone: pd.DataFrame) -> plt.Figure:
+def forecast_figure(zone: pd.DataFrame, interval_label: str = "hour") -> plt.Figure:
     fig, ax = plt.subplots(figsize=(10, 4.2), facecolor=SURFACE)
     ax.set_facecolor(SURFACE)
     ax.plot(zone["timestamp"], zone["pickups"], color=ORANGE, linewidth=2, label="Actual")
@@ -37,7 +37,7 @@ def forecast_figure(zone: pd.DataFrame) -> plt.Figure:
     )
     ax.xaxis.set_major_locator(mdates.DayLocator())
     ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %d"))
-    ax.set_ylabel("Pickups per hour")
+    ax.set_ylabel(f"Pickups per {interval_label}")
     ax.grid(axis="y", color=GRID)
     ax.spines[["top", "right"]].set_visible(False)
     ax.legend(frameon=False, ncol=2)
@@ -98,31 +98,71 @@ def main() -> None:
             "The model was trained through July 17, validated on July 18–24, and "
             "evaluated once on July 25–31."
         )
-        zone_options = (
-            predictions[["zone_id", "zone_name", "borough"]]
-            .drop_duplicates()
-            .assign(label=lambda frame: frame["zone_name"] + " · " + frame["borough"])
-            .sort_values("label")
+        zone_summary = (
+            predictions.assign(absolute_error=lambda frame: (frame["pickups"] - frame["prediction"]).abs())
+            .groupby(["zone_id", "zone_name", "borough"], as_index=False)
+            .agg(
+                actual_pickups=("pickups", "sum"),
+                predicted_pickups=("prediction", "sum"),
+                absolute_error=("absolute_error", "sum"),
+            )
+            .sort_values(["actual_pickups", "zone_id"], ascending=[False, True])
+            .reset_index(drop=True)
         )
-        default_zone = int(predictions.groupby("zone_id")["pickups"].sum().idxmax())
-        labels = zone_options["label"].tolist()
-        default_label = zone_options.loc[zone_options["zone_id"] == default_zone, "label"].iloc[0]
-        selected_label = st.selectbox(
-            "Taxi zone",
-            labels,
-            index=labels.index(default_label),
+        zone_summary["wape"] = (
+            zone_summary["absolute_error"]
+            / zone_summary["actual_pickups"].replace(0, float("nan"))
         )
-        selected_zone = int(
-            zone_options.loc[zone_options["label"] == selected_label, "zone_id"].iloc[0]
+        zone_summary["demand_rank"] = zone_summary.index + 1
+        zone_summary["label"] = zone_summary.apply(
+            lambda row: (
+                f"#{row['demand_rank']:.0f} {row['zone_name']} · {row['borough']} | "
+                f"{row['actual_pickups']:,.0f} trips | WAPE {row['wape']:.1%}"
+            ),
+            axis=1,
         )
+
+        controls = st.columns([1, 2])
+        show_all_zones = controls[0].toggle(
+            "Show all 226 zones",
+            value=False,
+            help="Off by default so the portfolio view focuses on the 20 highest-demand operational zones.",
+        )
+        granularity = controls[1].selectbox(
+            "Chart granularity",
+            ["3-hour totals", "Hourly"],
+            index=0,
+            help="Three-hour totals make the operational demand pattern easier to compare; hourly data remain available.",
+        )
+        visible_zones = zone_summary if show_all_zones else zone_summary.head(20)
+        selected_label = st.selectbox("Taxi zone", visible_zones["label"].tolist(), index=0)
+        selected = visible_zones.loc[visible_zones["label"] == selected_label].iloc[0]
+        selected_zone = int(selected["zone_id"])
         zone = predictions[predictions["zone_id"] == selected_zone].sort_values("timestamp")
-        error = (zone["pickups"] - zone["prediction"]).abs()
-        wape = float(error.sum() / zone["pickups"].sum()) if zone["pickups"].sum() else 0.0
+
+        if granularity == "3-hour totals":
+            chart_data = (
+                zone.set_index("timestamp")[["pickups", "prediction"]]
+                .resample("3h")
+                .sum()
+                .reset_index()
+            )
+            interval_label = "3 hours"
+        else:
+            chart_data = zone
+            interval_label = "hour"
+
         c1, c2, c3 = st.columns(3)
-        c1.metric("Zone blind-test WAPE", f"{wape:.1%}")
-        c2.metric("Actual pickups", f"{zone['pickups'].sum():,.0f}")
-        c3.metric("Predicted pickups", f"{zone['prediction'].sum():,.0f}")
-        st.pyplot(forecast_figure(zone), width="stretch")
+        c1.metric("Zone blind-test WAPE", f"{selected['wape']:.1%}")
+        c2.metric("Actual pickups", f"{selected['actual_pickups']:,.0f}")
+        c3.metric("Predicted pickups", f"{selected['predicted_pickups']:,.0f}")
+        if selected["actual_pickups"] < len(zone):
+            st.warning(
+                "This is a sparse-demand zone averaging fewer than one pickup per hour. "
+                "Occasional count spikes are intrinsically difficult to predict; use the Top-20 view "
+                "for representative operational performance."
+            )
+        st.pyplot(forecast_figure(chart_data, interval_label), width="stretch")
 
     with rebalancing_tab:
         st.subheader("Travel-time-aware offline rebalancing snapshot")

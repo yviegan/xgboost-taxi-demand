@@ -1,0 +1,28 @@
+{
+  "raw_glob": "data/raw/yellow_tripdata_2025-0[1-6].parquet",
+  "hourly_output": "data/processed/hourly_demand.parquet",
+  "metrics_output": "reports/metrics.json",
+  "importance_output": "reports/feature_importance.csv",
+  "predictions_output": "reports/test_predictions.parquet",
+  "zone_metrics_output": "reports/zone_metrics.csv",
+  "model_output": "models/xgboost_demand.json",
+  "rebalancing_output": "reports/rebalancing.csv",
+  "validation_days": 7,
+  "test_days": 7,
+  "min_zone_total_pickups": 500,
+  "lags": [1, 2, 3, 24, 168],
+  "rolling_windows": [3, 6, 24, 168],
+  "model": {
+    "objective": "count:poisson",
+    "n_estimators": 1000,
+    "learning_rate": 0.05,
+    "max_depth": 8,
+    "min_child_weight": 10,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_lambda": 5.0,
+    "tree_method": "hist",
+    "random_state": 42,
+    "n_jobs": -1
+  }
+}

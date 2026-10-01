@@ -1,0 +1,29 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local-only résumé and interview preparation
+RESUME_AND_INTERVIEW.md
+
+# Raw TLC data and processed modeling panels
+data/raw/*.parquet
+data/raw/*.zip
+data/processed/*
+!data/processed/.gitkeep
+
+# Trained models and full experiment artifacts
+models/*.json
+reports/**
+
+# Publish static portfolio figures
+!reports/figures/
+!reports/figures/*.png
+
+# Publish only compact artifacts required by the Streamlit demo
+!reports/demo/
+!reports/demo/rebalancing_zone_state.csv
+!reports/demo/rebalancing_moves.csv
+!reports/demo/rebalancing_summary.json
+!reports/demo/blind_predictions.parquet

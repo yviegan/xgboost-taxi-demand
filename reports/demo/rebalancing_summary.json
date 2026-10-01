@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-06-30T23:00:00",
+  "initial_forecast_deficit": 858.0,
+  "vehicles_rebalanced": 858.0,
+  "remaining_forecast_deficit": 0.0,
+  "rebalancing_cost": 13121.25,
+  "routes": 130,
+  "origins": 115,
+  "destinations": 25,
+  "uniform_assignment_vehicle_minutes": 26720.775,
+  "travel_time_aware_vehicle_minutes": 13121.249999999998,
+  "vehicle_minutes_reduction": 13599.525000000003,
+  "vehicle_minutes_reduction_rate": 0.508949497160917,
+  "observed_od_vehicle_share": 0.7599067599067599,
+  "cost_history_start": "2025-06-01T00:00:00",
+  "cost_history_end": "2025-06-30T22:59:58",
+  "min_route_samples": 20,
+  "cost_note": "Median observed June trip time by OD pair before the snapshot; sparse routes use an explicit fallback."
+}

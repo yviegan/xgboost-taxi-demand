@@ -1,0 +1,131 @@
+origin_zone,destination_zone,vehicles,travel_minutes,cost_source,route_samples,vehicle_minutes,origin_borough,origin_name,destination_borough,destination_name
+262,138,81,17.991666666666667,observed_od,778,1457.325,Manhattan,Yorkville East,Queens,LaGuardia Airport
+237,161,51,8.933333333333334,observed_od,11404,455.6,Manhattan,Upper East Side South,Manhattan,Midtown Center
+79,114,38,6.966666666666667,observed_od,2700,264.73333333333335,Manhattan,East Village,Manhattan,Greenwich Village South
+164,161,31,8.733333333333333,observed_od,5294,270.7333333333333,Manhattan,Midtown South,Manhattan,Midtown Center
+74,138,30,16.0,observed_od,106,480.0,Manhattan,East Harlem North,Queens,LaGuardia Airport
+68,249,30,7.7,observed_od,3516,231.0,Manhattan,East Chelsea,Manhattan,West Village
+231,249,28,8.516666666666667,observed_od,2446,238.4666666666667,Manhattan,TriBeCa/Civic Center,Manhattan,West Village
+42,138,26,19.125,observed_od,40,497.25,Manhattan,Central Harlem North,Queens,LaGuardia Airport
+48,230,26,7.35,observed_od,3425,191.1,Manhattan,Clinton East,Manhattan,Times Sq/Theatre District
+90,186,25,4.5,observed_od,2461,112.5,Manhattan,Flatiron,Manhattan,Penn Station/Madison Sq West
+61,132,22,32.0,observed_od,79,704.0,Brooklyn,Crown Heights North,Queens,JFK Airport
+7,138,22,10.866666666666667,observed_od,83,239.06666666666666,Queens,Astoria,Queens,LaGuardia Airport
+92,132,16,25.3,fallback,0,404.8,Queens,Flushing,Queens,JFK Airport
+127,132,15,28.316666666666666,fallback,0,424.75,Manhattan,Inwood,Queens,JFK Airport
+179,138,15,11.366666666666667,observed_od,30,170.5,Queens,Old Astoria,Queens,LaGuardia Airport
+142,70,14,10.833333333333334,fallback,0,151.66666666666669,Manhattan,Lincoln Square East,Queens,East Elmhurst
+162,161,14,8.316666666666666,observed_od,4332,116.43333333333334,Manhattan,Midtown East,Manhattan,Midtown Center
+226,138,13,13.616666666666667,observed_od,391,177.01666666666668,Queens,Sunnyside,Queens,LaGuardia Airport
+164,234,13,5.183333333333334,observed_od,3553,67.38333333333334,Manhattan,Midtown South,Manhattan,Union Sq
+223,138,13,4.05,observed_od,118,52.65,Queens,Steinway,Queens,LaGuardia Airport
+10,132,12,9.516666666666667,observed_od,39,114.20000000000002,Queens,Baisley Park,Queens,JFK Airport
+95,132,11,25.183333333333334,observed_od,61,277.01666666666665,Queens,Forest Hills,Queens,JFK Airport
+211,144,11,5.75,observed_od,708,63.25,Manhattan,SoHo,Manhattan,Little Italy/NoLiTa
+225,132,10,36.65,observed_od,31,366.5,Brooklyn,Stuyvesant Heights,Queens,JFK Airport
+116,132,10,26.333333333333332,fallback,0,263.3333333333333,Manhattan,Hamilton Heights,Queens,JFK Airport
+129,138,10,2.6416666666666666,observed_od,344,26.416666666666664,Queens,Jackson Heights,Queens,LaGuardia Airport
+125,249,8,5.1,observed_od,1020,40.8,Manhattan,Hudson Sq,Manhattan,West Village
+247,132,7,30.65,fallback,0,214.54999999999998,Bronx,West Concourse,Queens,JFK Airport
+133,132,7,23.383333333333333,fallback,0,163.68333333333334,Brooklyn,Kensington,Queens,JFK Airport
+48,70,7,11.116666666666667,fallback,0,77.81666666666666,Manhattan,Clinton East,Queens,East Elmhurst
+216,132,7,4.016666666666667,observed_od,540,28.116666666666667,Queens,South Ozone Park,Queens,JFK Airport
+17,132,6,37.083333333333336,observed_od,25,222.5,Brooklyn,Bedford,Queens,JFK Airport
+80,138,6,17.816666666666666,observed_od,50,106.9,Brooklyn,East Williamsburg,Queens,LaGuardia Airport
+28,132,6,14.716666666666667,observed_od,23,88.3,Queens,Briarwood/Jamaica Hills,Queens,JFK Airport
+100,161,6,8.683333333333334,observed_od,3857,52.1,Manhattan,Garment District,Manhattan,Midtown Center
+83,138,6,6.783333333333333,observed_od,101,40.7,Queens,Elmhurst/Maspeth,Queens,LaGuardia Airport
+241,132,5,36.88333333333333,fallback,0,184.41666666666666,Bronx,Van Cortlandt Village,Queens,JFK Airport
+215,132,5,29.316666666666666,fallback,0,146.58333333333334,Queens,South Jamaica,Queens,JFK Airport
+85,132,5,25.85,fallback,0,129.25,Brooklyn,Erasmus,Queens,JFK Airport
+193,138,5,18.666666666666664,observed_od,22,93.33333333333331,Queens,Queensbridge/Ravenswood,Queens,LaGuardia Airport
+146,138,5,16.808333333333334,observed_od,138,84.04166666666667,Queens,Long Island City/Queens Plaza,Queens,LaGuardia Airport
+158,249,5,5.908333333333333,observed_od,1408,29.541666666666664,Manhattan,Meatpacking/West Village West,Manhattan,West Village
+142,163,5,5.883333333333334,observed_od,4561,29.416666666666668,Manhattan,Lincoln Square East,Manhattan,Midtown North
+113,114,5,5.083333333333333,observed_od,1357,25.416666666666664,Manhattan,Greenwich Village North,Manhattan,Greenwich Village South
+90,249,5,4.933333333333334,observed_od,3146,24.666666666666668,Manhattan,Flatiron,Manhattan,West Village
+208,132,4,36.86666666666667,fallback,0,147.46666666666667,Bronx,Schuylerville/Edgewater Park,Queens,JFK Airport
+175,132,4,35.75833333333334,fallback,0,143.03333333333336,Queens,Oakland Gardens,Queens,JFK Airport
+157,132,4,34.516666666666666,observed_od,97,138.06666666666666,Queens,Maspeth,Queens,JFK Airport
+198,132,4,27.95,fallback,0,111.8,Queens,Ridgewood,Queens,JFK Airport
+205,132,4,26.9,fallback,0,107.6,Queens,Saint Albans,Queens,JFK Airport
+64,132,4,23.733333333333334,fallback,0,94.93333333333334,Queens,Douglaston,Queens,JFK Airport
+258,132,4,23.183333333333334,fallback,0,92.73333333333333,Queens,Woodhaven,Queens,JFK Airport
+97,132,4,23.0,fallback,0,92.0,Brooklyn,Fort Greene,Queens,JFK Airport
+82,132,4,20.825,fallback,0,83.3,Queens,Elmhurst,Queens,JFK Airport
+63,132,4,18.9,fallback,0,75.6,Brooklyn,Cypress Hills,Queens,JFK Airport
+65,66,4,7.2,observed_od,123,28.8,Brooklyn,Downtown Brooklyn/MetroTech,Brooklyn,DUMBO/Vinegar Hill
+196,132,3,28.483333333333334,observed_od,56,85.45,Queens,Rego Park,Queens,JFK Airport
+94,132,3,27.09166666666667,fallback,0,81.275,Bronx,Fordham South,Queens,JFK Airport
+257,132,3,26.283333333333335,fallback,0,78.85000000000001,Brooklyn,Windsor Terrace,Queens,JFK Airport
+73,132,3,26.2,fallback,0,78.6,Queens,East Flushing,Queens,JFK Airport
+203,132,3,25.866666666666667,fallback,0,77.6,Queens,Rosedale,Queens,JFK Airport
+102,132,3,24.35,fallback,0,73.05000000000001,Queens,Glendale,Queens,JFK Airport
+108,132,3,19.766666666666666,fallback,0,59.3,Brooklyn,Gravesend,Queens,JFK Airport
+165,132,3,15.933333333333334,fallback,0,47.8,Brooklyn,Midwood,Queens,JFK Airport
+260,138,3,10.4,observed_od,71,31.200000000000003,Queens,Woodside,Queens,LaGuardia Airport
+254,132,2,33.71666666666667,fallback,0,67.43333333333334,Bronx,Williamsbridge/Olinville,Queens,JFK Airport
+60,132,2,31.683333333333334,fallback,0,63.36666666666667,Bronx,Crotona Park East,Queens,JFK Airport
+212,132,2,31.008333333333333,fallback,0,62.016666666666666,Bronx,Soundview/Bruckner,Queens,JFK Airport
+55,132,2,30.241666666666667,fallback,0,60.483333333333334,Brooklyn,Coney Island,Queens,JFK Airport
+168,132,2,26.93333333333333,fallback,0,53.86666666666666,Bronx,Mott Haven/Port Morris,Queens,JFK Airport
+202,132,2,26.85,fallback,0,53.7,Manhattan,Roosevelt Island,Queens,JFK Airport
+40,132,2,26.166666666666668,fallback,0,52.333333333333336,Brooklyn,Carroll Gardens,Queens,JFK Airport
+218,132,2,25.166666666666668,fallback,0,50.333333333333336,Queens,Springfield Gardens North,Queens,JFK Airport
+52,132,2,23.975,fallback,0,47.95,Brooklyn,Cobble Hill,Queens,JFK Airport
+38,132,2,23.266666666666666,fallback,0,46.53333333333333,Queens,Cambria Heights,Queens,JFK Airport
+54,132,2,23.233333333333334,fallback,0,46.46666666666667,Brooklyn,Columbia Street,Queens,JFK Airport
+131,132,2,19.816666666666666,fallback,0,39.63333333333333,Queens,Jamaica Estates,Queens,JFK Airport
+263,138,2,19.333333333333332,observed_od,752,38.666666666666664,Manhattan,Yorkville West,Queens,LaGuardia Airport
+155,132,2,18.883333333333333,fallback,0,37.766666666666666,Brooklyn,Marine Park/Mill Basin,Queens,JFK Airport
+98,132,2,18.833333333333336,fallback,0,37.66666666666667,Queens,Fresh Meadows,Queens,JFK Airport
+9,132,2,17.25,fallback,0,34.5,Queens,Auburndale,Queens,JFK Airport
+22,132,2,17.2,fallback,0,34.4,Brooklyn,Bensonhurst West,Queens,JFK Airport
+14,132,2,16.95,fallback,0,33.9,Brooklyn,Bay Ridge,Queens,JFK Airport
+145,138,2,16.95,observed_od,244,33.9,Queens,Long Island City/Hunters Point,Queens,LaGuardia Airport
+180,132,2,14.2,observed_od,24,28.4,Queens,Ozone Park,Queens,JFK Airport
+134,132,2,13.975,observed_od,240,27.95,Queens,Kew Gardens,Queens,JFK Airport
+76,132,2,12.483333333333333,observed_od,39,24.966666666666665,Brooklyn,East New York,Queens,JFK Airport
+35,177,2,10.0,observed_od,72,20.0,Brooklyn,Brownsville,Brooklyn,Ocean Hill
+93,138,2,6.866666666666667,observed_od,20,13.733333333333334,Queens,Flushing Meadows-Corona Park,Queens,LaGuardia Airport
+47,132,1,36.21666666666667,fallback,0,36.21666666666667,Bronx,Claremont/Bathgate,Queens,JFK Airport
+213,132,1,35.9,fallback,0,35.9,Bronx,Soundview/Castle Hill,Queens,JFK Airport
+200,132,1,35.8,fallback,0,35.8,Bronx,Riverdale/North Riverdale/Fieldston,Queens,JFK Airport
+220,132,1,35.65,fallback,0,35.65,Bronx,Spuyten Duyvil/Kingsbridge,Queens,JFK Airport
+147,132,1,34.5,fallback,0,34.5,Bronx,Longwood,Queens,JFK Airport
+252,132,1,33.44166666666666,fallback,0,33.44166666666666,Queens,Whitestone,Queens,JFK Airport
+159,132,1,30.866666666666667,fallback,0,30.866666666666667,Bronx,Melrose South,Queens,JFK Airport
+201,132,1,29.85,fallback,0,29.85,Queens,Rockaway Park,Queens,JFK Airport
+160,132,1,28.44166666666667,observed_od,38,28.44166666666667,Queens,Middle Village,Queens,JFK Airport
+235,132,1,27.95,fallback,0,27.95,Bronx,University Heights/Morris Heights,Queens,JFK Airport
+36,132,1,27.366666666666667,fallback,0,27.366666666666667,Brooklyn,Bushwick North,Queens,JFK Airport
+135,132,1,25.916666666666668,fallback,0,25.916666666666668,Queens,Kew Gardens Hills,Queens,JFK Airport
+106,132,1,25.133333333333333,fallback,0,25.133333333333333,Brooklyn,Gowanus,Queens,JFK Airport
+56,132,1,23.233333333333334,fallback,0,23.233333333333334,Queens,Corona,Queens,JFK Airport
+121,132,1,21.733333333333334,fallback,0,21.733333333333334,Queens,Hillcrest/Pomonok,Queens,JFK Airport
+71,132,1,21.516666666666666,fallback,0,21.516666666666666,Brooklyn,East Flatbush/Farragut,Queens,JFK Airport
+26,132,1,21.05,fallback,0,21.05,Brooklyn,Borough Park,Queens,JFK Airport
+242,132,1,20.05,fallback,0,20.05,Bronx,Van Nest/Morris Park,Queens,JFK Airport
+130,132,1,19.825,observed_od,90,19.825,Queens,Jamaica,Queens,JFK Airport
+91,132,1,19.55,fallback,0,19.55,Brooklyn,Flatlands,Queens,JFK Airport
+101,132,1,19.383333333333333,fallback,0,19.383333333333333,Queens,Glen Oaks,Queens,JFK Airport
+210,132,1,17.666666666666668,fallback,0,17.666666666666668,Brooklyn,Sheepshead Bay,Queens,JFK Airport
+122,132,1,17.55,fallback,0,17.55,Queens,Hollis,Queens,JFK Airport
+21,132,1,16.925,fallback,0,16.925,Brooklyn,Bensonhurst East,Queens,JFK Airport
+39,132,1,16.125,fallback,0,16.125,Brooklyn,Canarsie,Queens,JFK Airport
+142,3,1,10.833333333333334,fallback,0,10.833333333333334,Manhattan,Lincoln Square East,Bronx,Allerton/Pelham Gardens
+39,222,1,10.616666666666667,observed_od,33,10.616666666666667,Brooklyn,Canarsie,Brooklyn,Starrett City
+63,177,1,10.616666666666667,observed_od,43,10.616666666666667,Brooklyn,Cypress Hills,Brooklyn,Ocean Hill
+76,77,1,10.233333333333334,observed_od,144,10.233333333333334,Brooklyn,East New York,Brooklyn,East New York/Pennsylvania Avenue
+124,132,1,10.058333333333334,observed_od,20,10.058333333333334,Queens,Howard Beach,Queens,JFK Airport
+14,228,1,9.883333333333333,observed_od,114,9.883333333333333,Brooklyn,Bay Ridge,Brooklyn,Sunset Park West
+21,123,1,9.35,observed_od,38,9.35,Brooklyn,Bensonhurst East,Brooklyn,Homecrest
+205,139,1,9.333333333333334,observed_od,29,9.333333333333334,Queens,Saint Albans,Queens,Laurelton
+35,72,1,9.283333333333333,observed_od,57,9.283333333333333,Brooklyn,Brownsville,Brooklyn,East Flatbush/Remsen Village
+165,149,1,8.9,observed_od,47,8.9,Brooklyn,Midwood,Brooklyn,Madison
+14,67,1,8.816666666666666,observed_od,59,8.816666666666666,Brooklyn,Bay Ridge,Brooklyn,Dyker Heights
+227,228,1,8.425,observed_od,58,8.425,Brooklyn,Sunset Park East,Brooklyn,Sunset Park West
+191,19,1,8.408333333333333,observed_od,36,8.408333333333333,Queens,Queens Village,Queens,Bellerose
+56,173,1,7.583333333333334,observed_od,32,7.583333333333334,Queens,Corona,Queens,North Corona
+13,12,1,5.516666666666667,observed_od,119,5.516666666666667,Manhattan,Battery Park City,Manhattan,Battery Park
+219,132,1,3.5,observed_od,37,3.5,Queens,Springfield Gardens South,Queens,JFK Airport
